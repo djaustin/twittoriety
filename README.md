@@ -1,3 +1,3 @@
-bawdbadbadwad# twittoriety
+# twittoriety
 
 Making you feel bad about your twitter followers.
