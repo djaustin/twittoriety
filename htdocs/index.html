@@ -6,15 +6,20 @@
   </head>
 
   <body>
-    <div id="header">
-        <div class="head"><a href="index.html">Twittoriety</a></div>
-        <div class="slogan">Making you feel bad about your followers</div>
-    </div>
-
-    <div id="form">
-      <div class="textfield">
-        <textarea placeholder="Type your tweet..." maxlength="140"></textarea>
+    <div ng-app="twittoriety">
+      <div id="header">
+          <div class="head"><a href="index.html">Twittoriety</a></div>
+          <div class="slogan">Making you feel bad about your followers</div>
       </div>
-    </div>
+
+      <div id="form">
+        <div class="textfield">
+          <textarea placeholder="Type your tweet..." maxlength="140" ng-model="userInput"></textarea>
+          <div id="remaining-characters">
+            {{140 - userInput.length}}
+          </div>
+        </div>
+      </div>
+  </div>
   </body>
 </html>
