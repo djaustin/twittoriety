@@ -1,12 +1,12 @@
 <html>
   <head>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
-    <script src="../script/app.js"></script>
-    <link href="../style/theme.css" rel="stylesheet">
+    <script src="script/angular.min.js"></script>
+    <script src="script/app.js"></script>
+    <link href="style/theme.css" rel="stylesheet">
   </head>
 
   <body>
-    <div ng-app="twittoriety">
+    <div ng-app="twittoriety" ng-controller="InputController">
       <div id="header">
           <div class="head"><a href="index.html">Twittoriety</a></div>
           <div class="slogan">Making you feel bad about your followers</div>
@@ -17,10 +17,14 @@
           <textarea placeholder="Type your tweet..." maxlength="140" ng-model="userInput"></textarea>
         </div>
         <div id="butchar">
-          <div id="button"><input type="submit" ng-click="shout()"></input></div>
+          <div id="button"><input type="submit" ng-click="compareTweets(userInput, true)"></input></div>
           <div id="remaining-characters"> {{140 - userInput.length}} </div>
         </div>
       </div>
+      <br /><br /><div>
+        similarity: {{similarity}}
+      </div>
+
   </div>
   </body>
 </html>
