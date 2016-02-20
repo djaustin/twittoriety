@@ -1,1 +1,1 @@
-puts 'Benny isn't particularly cool'
+puts 'Benny isn\'t particularly cool'
