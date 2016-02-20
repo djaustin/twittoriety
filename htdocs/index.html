@@ -17,7 +17,7 @@
           <textarea placeholder="Type your tweet..." maxlength="140" ng-model="userInput"></textarea>
         </div>
         <div id="butchar">
-          <div id="button"><input type="submit"></input></div>
+          <div id="button"><input type="submit" ng-click="shout()"></input></div>
           <div id="remaining-characters"> {{140 - userInput.length}} </div>
         </div>
       </div>
