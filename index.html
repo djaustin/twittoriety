@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="script/angular.min.js"></script>
+    <script src="script/levenshtein.js"></script>
     <script src="script/app.js"></script>
     <link href="style/theme.css" rel="stylesheet">
     <title>Twittoriety!</title>
@@ -12,13 +13,13 @@
           <div class="head"><a href="index.html">Twittoriety</a></div>
           <div class="slogan">Making you feel bad about your followers</div>
       </div>
-
+      {{similarity}}
       <div id="form">
         <div class="textfield">
           <textarea placeholder="Type your tweet..." maxlength="140" ng-model="userInput"></textarea>
         </div>
         <div id="butchar">
-          <div id="button"><input type="submit" ng-click="compareTweets(userInput, true)"></input></div>
+          <div id="button"><input type="submit" ng-click="compare(userInput, sampleTweet)"></input></div>
           <div id="remaining-characters"> {{140 - userInput.length}} </div>
         </div>
     </div>
