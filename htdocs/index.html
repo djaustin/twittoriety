@@ -15,9 +15,10 @@
       <div id="form">
         <div class="textfield">
           <textarea placeholder="Type your tweet..." maxlength="140" ng-model="userInput"></textarea>
-          <div id="remaining-characters">
-            {{140 - userInput.length}}
-          </div>
+        </div>
+        <div id="butchar">
+          <div id="button"><input type="submit"></input></div>
+          <div id="remaining-characters"> {{140 - userInput.length}} </div>
         </div>
       </div>
   </div>

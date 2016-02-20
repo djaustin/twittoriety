@@ -69,6 +69,68 @@ div#form {
   word-break: normal;
 }
 
+div#butchar {
+  display: relative;
+}
+
+div#remaining-characters {
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  font-family: sans-serif;
+  color: 000;
+  opacity: 0.6;
+  padding: 5px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background: linear-gradient(1ad1ff, 00b8e6);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #99ebff;
+  position: fixed;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #0099cc;
+  text-shadow: 0px 1px 0px #66e0ff;
+  font-size: 16px;
+  padding: 4px;
+  transition: 0.5s;
+  border: 1px;
+}
+
+input[type="submit"]:hover {
+  text-decoration:none;
+  cursor: pointer;
+  background: linear-gradient(99ebff, 66e0ff);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #99ebff;
+  position: fixed;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #1ac6ff;
+  text-shadow: 0px 1px 0px #66e0ff;
+  font-size: 16px;
+  padding: 4px;
+  transition: 0.5s;
+}
+
+input[type="submit"]:active {
+  text-decoration:none;
+  cursor: pointer;
+  background: linear-gradient(00a3cc, 007a99);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #000;
+  position: fixed;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #005266;
+  text-shadow: 0px 1px 0px #fff;
+  font-size: 16px;
+  padding: 4px;
+  transition: 0.5s;
+}
+
 textarea {
     display: inline-block;
     width: 450px;
