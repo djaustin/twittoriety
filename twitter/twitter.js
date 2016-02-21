@@ -8,16 +8,11 @@ var Twitter = require('twitter');
     });
 
 
-client.get('search/tweets', {q: 'node.js'}, function(error, tweets, response){
-   console.log(tweets);
-});
-
-
 /**
  * Stream statuses filtered by keyword
  * number of tweets per second depends on topic popularity
  **/
-/*client.stream('statuses/filter', {track: 'twitter'},  function(stream){
+client.stream('statuses/filter', {track: 'twitter'},  function(stream){
   stream.on('data', function(tweet) {
     console.log(tweet.text);
   });
@@ -26,4 +21,8 @@ client.get('search/tweets', {q: 'node.js'}, function(error, tweets, response){
     console.log(error);
   });
 });
-*/
+
+
+
+
+
