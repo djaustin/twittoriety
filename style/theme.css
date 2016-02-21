@@ -148,6 +148,38 @@ textarea {
     resize: none;
   }
 
+  div#banter {
+      display: inline-block;
+      width: 450px;
+      height: 100px;
+      hyphens: auto;
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 18px;
+      appearance: none;
+      box-shadow: none;
+      border-radius: none;
+      padding: 10px;
+      border: solid 5px #c9c9c9;
+      transition: border 0.3s;
+      resize: none;
+    }
+
+div#tweettext div.retweet {
+  background: linear-gradient(1ad1ff, 00b8e6);
+  border-radius: 5px;
+  box-shadow: inset 0px 1px 0px #99ebff;
+  position: fixed;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #0099cc;
+  text-shadow: 0px 1px 0px #66e0ff;
+  font-size: 18px;
+  padding: 4px;
+  transition: 0.5s;
+  border: 1px;
+}
+
 textarea:focus,
 textarea.focus {
   outline: none;

@@ -22,15 +22,9 @@
           <div id="button"><input type="submit" ng-click="submit()"></input></div>
           <div id="remaining-characters"> {{140 - userInput.length}} </div>
         </div>
-        <div class="textfield">
+        <div class="tweettext">
           <div ng-show="matchedTweet">
-            <textarea readonly="true" placeholder="Your closest tweet is..." maxlength="140">
-                {{tweets.length}}"{{matchedTweet.text}}" by {{matchedTweet.screen_name}} with {{matchedTweet.retweets}} retweets and {{matchedTweet.favourites}} favourites
-            </textarea>
-          </div>
-          <div ng-hide="matchedTweet">
-            <textarea readonly="true" placeholder="Your closest tweet is..." maxlength="140">
-                Searching {{tweets.length}} tweets
+            <textarea readonly="true" placeholder="Your closest tweet is..." maxlength="140">"{{matchedTweet.text}}" by {{matchedTweet.screen_name}} with {{matchedTweet.retweets}} retweets and {{matchedTweet.favourites}} favourites
             </textarea>
           </div>
         </div>
