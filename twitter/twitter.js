@@ -11,12 +11,12 @@ var client = new Twitter({
 });
 var count = 0
 function loop(limit){
-  client.get('statuses/user_timeline', {"screen_name": "taylorswift13", "max_id": max_id}, function(error, tweets, response){
+  client.get('statuses/user_timeline', {"screen_name": "coffee_dad", "max_id": max_id}, function(error, tweets, response){
     if(error) console.log(error);
     console.log(tweets.length)
     tweets.forEach(function(tweet){
       tweetInfo.push({
-        screen_name: "taylorswift13",
+        screen_name: "coffee_dad",
         id: tweet.id,
         text: tweet.text,
         retweets: tweet.retweet_count,
@@ -33,10 +33,10 @@ function loop(limit){
     loop(limit)
   });
 }
-loop(10)
+loop(56)
 
 function outputJSON(){
-  fs.writeFile("taylorswift13.json", JSON.stringify(tweetInfo, null, 4), function(err){
+  fs.writeFile("coffee_dad.json", JSON.stringify(tweetInfo, null, 4), function(err){
     if (err) {console.log(err)}
 })
 }

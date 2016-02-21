@@ -29,8 +29,8 @@ angular.module('twittoriety', []).controller('InputController', ['$scope', '$htt
         $scope.matchedTweet = $scope.tweets[i];
       }
     }
-  })
-}
+    })
+  }
 
 
 
