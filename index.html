@@ -25,7 +25,12 @@
         <div class="textfield">
           <div ng-show="matchedTweet">
             <textarea readonly="true" placeholder="Your closest tweet is..." maxlength="140">
-                {{matchedTweet.content}}
+                {{tweets.length}}"{{matchedTweet.text}}" by {{matchedTweet.screen_name}} with {{matchedTweet.retweets}} retweets and {{matchedTweet.favourites}} favourites
+            </textarea>
+          </div>
+          <div ng-hide="matchedTweet">
+            <textarea readonly="true" placeholder="Your closest tweet is..." maxlength="140">
+                Searching {{tweets.length}} tweets
             </textarea>
           </div>
         </div>
