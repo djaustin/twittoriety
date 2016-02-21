@@ -19,8 +19,15 @@
           <textarea placeholder="Type your tweet..." maxlength="140" ng-model="userInput"></textarea>
         </div>
         <div id="butchar">
-          <div id="button"><input type="submit" ng-click="compare(userInput, sampleTweet)"></input></div>
+          <div id="button"><input type="submit" ng-click="submit()"></input></div>
           <div id="remaining-characters"> {{140 - userInput.length}} </div>
+        </div>
+        <div class="textfield">
+          <div ng-show="matchedTweet">
+            <textarea readonly="true" placeholder="Your closest tweet is..." maxlength="140">
+                {{matchedTweet.content}}
+            </textarea>
+          </div>
         </div>
     </div>
   </body>
