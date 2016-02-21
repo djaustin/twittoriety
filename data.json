@@ -1,4 +1,5 @@
-{"users": {
+{
+	"users": {
 	  "1": {
 		  "uid": "kanyewest",
 		  "name": "Kanye West",
@@ -8,6 +9,39 @@
 			  "3": "Loving this mood for SEASON 4",
 			  "4": "Feels good to be home",
 			  "5": "Drake would come by and just help, no strings. Future also came by to write. We all got new shit together that's gonna drop soon."
+		  }
+	  },
+	  "2": {
+		  "uid": "justinbieber",
+		  "name": "Justin Bieber",
+		  "tweets": {
+			  "1": "smarturl.it/JBPurpose  #PURPOSE THE ALBUM",
+			  "2": "Me and @RoryKramer posting some vids @Bkstg http://bkstg.com/app ",
+			  "3": "Are you ready for the #purposeworldtour ??? https://instagram.com/p/BB6Vdfvgvp4/",
+			  "4": "Thanks for the ride to the Grammys @jkcorden. Gotta get that t zone. Lol http://youtu.be/Kn0YDZ3wifU ",
+			  "5": "Let's be the generation that makes the world a better place"
+		  }
+	  },
+	  "3": {
+		  "uid": "kanyewest",
+		  "name": "Kanye West",
+		  "tweets": {
+			  "1": "new sonasdg with my brothers French Montana and Nas http://bit.ly/1TvOnOD",
+			  "2": "My Heaasdasdrt",
+			  "3": "Loving asdasdthis mood for SEASON 4",
+			  "4": "Feels gsdasdood to be home",
+			  "5": "Drake wasdasdould come by and just help, no strings. Future also came by to write. We all got new shit together that's gonna drop soon."
+		  }
+	  },
+	  "4": {
+		  "uid": "kanyewest",
+		  "name": "Kanye West",
+		  "tweets": {
+			  "1": "new soxczxcng with my brothers French Montana and Nas http://bit.ly/1TvOnOD",
+			  "2": "My Hasdeart",
+			  "3": "Loviasdasng this mood for SEASON 4",
+			  "4": "Feelsxcasd good to be home",
+			  "5": "Drakasde would come by and just help, no strings. Future also came by to write. We all got new shit together that's gonna drop soon."
 		  }
 	  }
 	}
